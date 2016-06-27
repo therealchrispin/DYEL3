@@ -1,2 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="f4fb6981392ca7680d02fd57d26d6124c141d9d9">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-9.0.2_972a99068c40bf7da60269ff5d000c32bab5f766.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_e05ac61bd5c6a63d7a1f8143df341b8771cae590.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.0.2_de61fbd471ceb3d3393f31cee6e8987251f9e2d8.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.2_cdcbe535d9ff9c1d91ece2199ae7cac78188d1b5.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_7f62badb4142816e3d62a5f9d8fd7c3d3d1cffa2.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_844f9d32c5e1214bb4fc47679d126a5129df4774.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.2_76a2d8c2feeb4c477653dc19cf9376c9076fa26a.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_1ac6f96b5bbe2683721f8babd43f3ae81938a40b.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.4.0_725bf0939a9370ec6ce9f2d3a0dace07af8a7360.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.0.2_2c58592af13e5dc190692bba92c9116bf1011a91.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.2_117c96c6d05a071caf158167f7710dfd6214e7c4.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_10c24b3a2ef7245f101ad8a30e7554023f3485b5.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.2_00517d44976f9321e085e7eed126cc3e30a217fe.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b8e0372ca6dc89ac4fe22b76eeea4f68ece435b8">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-9.0.2_6119f8148624258078f8fde280d07cc08680655b.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.0.2_456e661bd61cb1b3b3131ebe0b3fca85ae6e4454.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_e2e32b8e5a0b30f324c5c7ca1760364dc803a14d.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_5d308435a382c09e9316ab6d803c650a67dd7ef6.jar" />
+    </item>
+    <item
+        jar="/Users/chris.als/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/chris.als/Downloads/Trainingsapp/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_0f37d64ea1e2e700cb9a050df0e1f30e1e44907a.jar" />
+    </item>
+
+</items>
