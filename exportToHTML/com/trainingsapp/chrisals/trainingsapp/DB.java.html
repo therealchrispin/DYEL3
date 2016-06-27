@@ -1,0 +1,135 @@
+<html>
+<head>
+    <title>DB.java</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        .ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+        .s0 { color: rgb(0,0,128); font-weight: bold; }
+        .s1 { }
+        .s2 { color: rgb(128,128,128); font-style: italic; }
+        .s3 { color: rgb(0,128,0); font-weight: bold; }
+        .s4 { color: rgb(0,0,255); }
+    </style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0">
+    <TR>
+        <TD>
+            <CENTER>
+                <FONT FACE="Arial, Helvetica" COLOR="#000000">
+                    DB.java</FONT>
+            </center>
+        </TD>
+    </TR>
+</TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">com.trainingsapp.chrisals.trainingsapp; 
+ 
+</span><span class="s0">import </span><span class="s1">android.content.ContentValues; 
+</span><span class="s0">import </span><span class="s1">android.content.Context; 
+</span><span class="s0">import </span><span class="s1">android.database.Cursor; 
+</span><span class="s0">import </span><span class="s1">android.database.sqlite.SQLiteDatabase; 
+</span><span class="s0">import </span><span class="s1">android.database.sqlite.SQLiteOpenHelper; 
+</span><span class="s0">import </span><span class="s1">android.inputmethodservice.Keyboard; 
+ 
+</span><span class="s0">import </span><span class="s1">java.util.Date; 
+ 
+</span><span class="s0">import static </span><span class="s1">com.trainingsapp.chrisals.trainingsapp.DBHelper.*; 
+ 
+</span><span class="s2">/** 
+ * Created by chris.als on 27.04.16. 
+ */</span><span class="s1"> 
+</span><span class="s0">public class </span><span class="s1">DB </span><span
+        class="s0">extends </span><span class="s1">SQLiteOpenHelper {
+    </span><span class="s0">public static final </span><span
+        class="s1">String DB_NAME = </span><span class="s3">&quot;Trainingsplan&quot;</span><span
+        class="s1">;
+    </span><span class="s0">public static int </span><span
+        class="s1">DATABASE_VERSION = </span><span class="s4">1</span><span class="s1">;
+    </span><span class="s0">private static </span><span class="s1">DB instance; 
+    </span><span class="s0">private static </span><span class="s1">SQLiteDatabase db; 
+    </span><span class="s0">private static </span><span class="s1">Context context; 
+ 
+    </span><span class="s0">public </span><span class="s1">DB (Context context){ 
+        </span><span class="s0">super</span><span class="s1">(context,DB_NAME,</span><span
+        class="s0">null</span><span class="s1">,DATABASE_VERSION);
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">onCreate(SQLiteDatabase db){ 
+        db.execSQL(CREATE_ENTRY); 
+        DATABASE_VERSION++; 
+    } 
+ 
+    </span><span class="s0">public void </span><span
+        class="s1">onUpgrade(SQLiteDatabase db,</span><span class="s0">int </span><span class="s1">newversion, </span><span
+        class="s0">int </span><span class="s1">oldversion){
+        db.execSQL(DBHelper.Datenbank.SQL_DELETE_ENTRIES); 
+        onCreate(db); 
+    } 
+ 
+    </span><span class="s0">public static </span><span class="s1">DB getInstance() { 
+        </span><span class="s0">if </span><span class="s1">(instance == </span><span
+        class="s0">null</span><span class="s1">) {
+            instance = </span><span class="s0">new </span><span class="s1">DB(context); 
+            db = instance.getWritableDatabase(); 
+        } 
+        </span><span class="s0">return </span><span class="s1">instance; 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">insertRowToDataBase(Context context,String[] maxes){ 
+        DB test = </span><span class="s0">new </span><span class="s1">DB(context); 
+        SQLiteDatabase db = test.getWritableDatabase(); 
+        </span><span class="s0">int </span><span class="s1">Id = </span><span
+        class="s4">1</span><span class="s1">;
+ 
+        ContentValues values = </span><span class="s0">new </span><span class="s1">ContentValues(); 
+        values.put(Datenbank.COLUMN_ID, Id); 
+        values.put(Datenbank.COLUMN_TITEL, maxes[</span><span class="s4">0</span><span class="s1">]); 
+        values.put(Datenbank.COLUMN_SQUAT, maxes[</span><span class="s4">1</span><span class="s1">]); 
+        values.put(Datenbank.COLUMN_BENCH, maxes[</span><span class="s4">2</span><span class="s1">]); 
+        values.put(Datenbank.COLUMN_OHP, maxes[</span><span class="s4">3</span><span class="s1">]); 
+        values.put(Datenbank.COLUMN_DEADLIFT, maxes[</span><span class="s4">4</span><span
+        class="s1">]);
+        Id++; 
+ 
+        </span><span class="s0">long </span><span class="s1">NewRow = db.insert(Datenbank.TABLE_NAME, </span><span
+        class="s0">null</span><span class="s1">, values );
+    } 
+ 
+    </span><span class="s0">public </span><span class="s1">String[] getRowFromDataBase(</span><span
+        class="s0">int </span><span class="s1">index){
+        String[] RowData = </span><span class="s0">new </span><span class="s1">String[</span><span
+        class="s4">5</span><span class="s1">];
+ 
+        String[] projection = { 
+                    Datenbank.COLUMN_TITEL, 
+                    Datenbank.COLUMN_SQUAT, 
+                    Datenbank.COLUMN_BENCH, 
+                    Datenbank.COLUMN_OHP, 
+                    Datenbank.COLUMN_DEADLIFT 
+        }; 
+ 
+        Cursor c = db.query(Datenbank.TABLE_NAME, projection, </span><span
+        class="s0">null</span><span class="s1">, </span><span class="s0">null</span><span
+        class="s1">, </span><span class="s0">null</span><span class="s1">, </span><span class="s0">null</span><span
+        class="s1">, </span><span class="s0">null</span><span class="s1">, </span><span class="s0">null</span><span
+        class="s1">);
+        c.moveToPosition(index); 
+ 
+ 
+        RowData[</span><span class="s4">0</span><span class="s1">] = c.getString(c.getColumnIndexOrThrow(Datenbank.COLUMN_TITEL)); 
+        RowData[</span><span class="s4">1</span><span class="s1">] = c.getString(c.getColumnIndexOrThrow(Datenbank.COLUMN_SQUAT)); 
+        RowData[</span><span class="s4">2</span><span class="s1">] = c.getString(c.getColumnIndexOrThrow(Datenbank.COLUMN_BENCH)); 
+        RowData[</span><span class="s4">3</span><span class="s1">] = c.getString(c.getColumnIndexOrThrow(Datenbank.COLUMN_OHP)); 
+        RowData[</span><span class="s4">4</span><span class="s1">] = c.getString(c.getColumnIndexOrThrow(Datenbank.COLUMN_DEADLIFT)); 
+ 
+        </span><span class="s0">return </span><span class="s1">RowData; 
+    } 
+ 
+} 
+ 
+ 
+</span></pre>
+</body>
+</html>
